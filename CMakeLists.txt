@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(zeit 
-    main.cpp
-    serialport.cpp
-    zeitcontrol.cpp
+    src/main.cpp
+    src/serialport.cpp
+    src/zeitcontrol.cpp
 )
 
 target_link_libraries(zeit pthread)
