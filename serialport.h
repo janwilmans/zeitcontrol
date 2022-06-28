@@ -1,8 +1,8 @@
 #pragma once
 
-#include <string_view>
-#include <string>
 #include <array>
+#include <string>
+#include <string_view>
 
 class serialport
 {
@@ -11,6 +11,7 @@ public:
     ~serialport();
     std::string read();
     void write(std::string_view);
+    int handle() const;
 
 private:
     std::string m_port;

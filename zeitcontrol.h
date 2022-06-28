@@ -4,16 +4,14 @@
 #include <memory>
 #include <thread>
 
-#include "serialport.h"
 #include "jthread.h"
+#include "serialport.h"
 
 class zeitcontrol
 {
 public:
     zeitcontrol();
     ~zeitcontrol();
-
-    std::string read();
 
     using callback = std::function<void(std::string_view)>;
 
