@@ -1,5 +1,5 @@
-#include "serialport.h"
-#include "string_format.h"
+#include "zeitcontrol/serialport.h"
+#include "zeitcontrol/string_format.h"
 
 #include <errno.h>
 #include <fcntl.h>

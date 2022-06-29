@@ -1,10 +1,9 @@
-#include <array>
+#include "zeitcontrol/string_format.h"
+#include "zeitcontrol/zeitcontrol.h"
+
 #include <cstddef>
 #include <cstdio>
 #include <string>
-
-#include "string_format.h"
-#include "zeitcontrol.h"
 
 using namespace std::literals;
 

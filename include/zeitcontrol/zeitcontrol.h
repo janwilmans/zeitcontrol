@@ -1,11 +1,11 @@
 #pragma once
 
+#include "zeitcontrol/jthread.h"
+#include "zeitcontrol/serialport.h"
+
 #include <functional>
 #include <memory>
 #include <thread>
-
-#include "jthread.h"
-#include "serialport.h"
 
 class zeitcontrol
 {

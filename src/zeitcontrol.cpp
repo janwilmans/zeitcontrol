@@ -1,11 +1,11 @@
-#include "zeitcontrol.h"
-#include "jthread.h"
+#include "zeitcontrol/zeitcontrol.h"
+#include "zeitcontrol/jthread.h"
+#include "zeitcontrol/string_format.h"
 
 #include <chrono>
 #include <functional>
 #include <memory>
 
-#include "string_format.h"
 #include <termios.h> // terminal control definitions
 
 using namespace std::literals;
