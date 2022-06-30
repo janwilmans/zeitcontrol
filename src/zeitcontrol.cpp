@@ -11,14 +11,13 @@
 using namespace std::literals;
 
 constexpr std::string_view zeitcontrol_port = "/dev/ttyACM0";
+using tty_t = struct termios;
 
 // $ sudo adduser $USER dialout
 void set_zeit_defaults(int fd)
 {
     // Create new termios struct, we call it 'tty' for convention
-    struct termios tty
-    {
-    };
+    tty_t tty{};
 
     // the struct passed to tcsetattr() must have been initialized with
     // a call to tcgetattr() overwise behaviour is undefined
